@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="volatile acidity <= 0.11\ngini = 0.5\nsamples = 100.0%\nvalue = [0.5, 0.5]\nclass = 1", fillcolor="#ffffff"] ;
+1 [label="gini = 0.46\nsamples = 18.8%\nvalue = [0.35, 0.65]\nclass = 1", fillcolor="#a4d2f3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.5\nsamples = 81.2%\nvalue = [0.55, 0.45]\nclass = 0", fillcolor="#fae8db"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
